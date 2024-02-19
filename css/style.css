@@ -150,10 +150,45 @@ ul {
   .container {
     padding: 0 10px;
   }
-  .menu__list {
-    display: none;
+  .header__menu-list {
+    /* display: none; */
+    width: 153px;
+    background: rgb(123, 97, 82);
+    color: rgb(255, 248, 243);
+    flex-direction: column;
+    gap: 20px 0;
+    padding: 25px 35px 25px 45px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(-110%);
+    transition: transform 0.5s ease;
+    z-index: 5;
+  }
+  .header__menu-list.menu--open {
+    transform: translateY(0%);
   }
   .menu__btn {
     display: flex;
+  }
+  .header__menu {
+    order: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer__inner {
+    flex-direction: column;
+  }
+  .footer__menu-list {
+    flex-direction: column;
+  }
+  .footer__menu {
+    padding: 50px 0;
+    text-align: center;
+  }
+  .footer {
+    padding: 50px 0;
+    font-size: 14px;
   }
 }
