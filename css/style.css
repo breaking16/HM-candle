@@ -11,7 +11,7 @@ html {
 body {
   color: rgb(0, 0, 0);
   /* font-family: "Yeseva One", serif; */
-  font-family: "Comfortaa", sans-serif;
+  font-family: "Comfortaa", cursive;
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
@@ -26,6 +26,13 @@ ul {
   list-style: none;
 }
 
+button {
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  cursor: pointer;
+}
+
 .container {
   max-width: 1180px;
   padding: 0 10px;
@@ -36,10 +43,7 @@ ul {
   display: none;
   width: 30px;
   height: 25px;
-  border: none;
   background-color: transparent;
-  padding: 0;
-  border-radius: 0;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -82,6 +86,49 @@ ul {
   left: -23px;
   position: absolute;
   top: -3px;
+}
+
+.main {
+  background: rgb(255, 248, 243);
+}
+
+.top {
+  padding: 40px 0 150px;
+}
+
+.top__inner {
+  position: relative;
+}
+
+.top__content {
+  width: 370px;
+  padding-top: 150px;
+}
+
+.top__title {
+  font-family: "Yeseva One", cursive;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+  margin-bottom: 15px;
+}
+
+.top__text {
+  margin-bottom: 48px;
+}
+
+.top__byu {
+  padding: 18px 54px;
+  background: rgb(255, 189, 89);
+  font-family: "Comfortaa", cursive;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.top__img {
+  position: absolute;
+  top: 0;
+  left: 240px;
 }
 
 .footer {
