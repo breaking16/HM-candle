@@ -38,6 +38,7 @@ button {
   margin-bottom: 15px;
   line-height: 46px;
   font-weight: 400;
+  font-family: "Yeseva One", cursive;
 }
 
 .section {
@@ -56,6 +57,30 @@ button {
   max-width: 1180px;
   padding: 0 10px;
   margin: 0 auto;
+}
+
+.section--decor {
+  position: relative;
+}
+
+.section--decor::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-image: url(../images/section-decor.png);
+  width: 22px;
+  height: 30px;
+}
+
+.section--decor::after {
+  content: "";
+  position: absolute;
+  left: 22px;
+  bottom: 11px;
+  background-color: rgb(123, 97, 82);
+  width: 1000%;
+  height: 1px;
 }
 
 .menu__btn {
@@ -178,27 +203,6 @@ button {
   align-items: center;
   gap: 0 20px;
   flex-basis: 930px;
-  position: relative;
-}
-
-.about__list::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background-image: url(../images/section-decor.png);
-  width: 22px;
-  height: 30px;
-}
-
-.about__list::after {
-  content: "";
-  position: absolute;
-  left: 22px;
-  bottom: 11px;
-  background-color: rgb(123, 97, 82);
-  width: 1000%;
-  height: 1px;
 }
 
 .about__item-img {
@@ -217,6 +221,7 @@ button {
 .section__content-descr {
   display: grid;
   grid-template-columns: auto auto;
+  padding-bottom: 92px;
 }
 
 .products__content {
@@ -300,6 +305,16 @@ button {
   .about__list {
     padding-left: 20px;
   }
+  .section__inner {
+    grid-template-columns: 290px auto;
+    gap: 0 10px;
+  }
+  .products__content {
+    gap: 67px;
+  }
+  .section__text {
+    font-size: 10px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -313,6 +328,13 @@ button {
   }
   .footer__social {
     justify-content: center;
+  }
+  .section__inner {
+    grid-template-columns: 200px auto;
+    gap: 30px 16px;
+  }
+  .products__content {
+    gap: 67px;
   }
 }
 
@@ -370,6 +392,31 @@ button {
   .about__item-img--2 {
     width: 190px;
   }
+  .products__item {
+    width: 200px;
+  }
+  .products__item-img {
+    width: 200px;
+    margin-bottom: 6px;
+  }
+  .button {
+    font-size: 12px;
+  }
+  .products__item-text {
+    font-size: 8px;
+    margin-bottom: 18px;
+  }
+  .products__item-price {
+    font-size: 12px;
+    margin-bottom: 7px;
+  }
+  .products__item-title {
+    font-size: 12px;
+    margin-bottom: 9px;
+  }
+  .button {
+    padding: 10px 26px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -399,6 +446,16 @@ button {
   }
   .header__menu {
     order: 1;
+  }
+  .section__inner {
+    display: block;
+  }
+  .section__descr {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .products__content {
+    gap: 30px 16px;
   }
 }
 
@@ -466,6 +523,12 @@ button {
   }
   .about__inner {
     align-items: flex-end;
+  }
+  .about {
+    margin-bottom: 50px;
+  }
+  .section {
+    padding-bottom: 50px;
   }
 }
 
