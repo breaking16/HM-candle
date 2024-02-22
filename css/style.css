@@ -36,8 +36,8 @@ button {
 .title {
   font-size: 40px;
   margin-bottom: 15px;
-  line-height: 46px;
   font-weight: 400;
+  line-height: 40px;
   font-family: "Yeseva One", cursive;
 }
 
@@ -77,7 +77,7 @@ button {
   content: "";
   position: absolute;
   left: 22px;
-  bottom: 11px;
+  bottom: 13px;
   background-color: rgb(123, 97, 82);
   width: 1000%;
   height: 1px;
@@ -124,11 +124,11 @@ button {
 
 .phone::before {
   content: "";
+  position: absolute;
   background-image: url(../images/phone.svg);
   width: 20px;
   height: 20px;
   left: -23px;
-  position: absolute;
   top: -3px;
 }
 
@@ -152,10 +152,10 @@ button {
 
 .top__title {
   font-family: "Yeseva One", cursive;
-  font-weight: 400;
   font-size: 30px;
-  line-height: 35px;
   margin-bottom: 15px;
+  font-weight: 400;
+  line-height: 35px;
 }
 
 .top__text {
@@ -292,6 +292,43 @@ button {
 .steps__item-text {
   flex-basis: 174px;
   padding-bottom: 40px;
+}
+
+.courses__item-img {
+  position: relative;
+  color: rgb(255, 255, 255);
+  font-size: 11px;
+  font-family: "Yeseva One", cursive;
+}
+
+.courses__title {
+  padding: 15px;
+  left: 10px;
+  top: 45%;
+}
+
+.courses__time {
+  padding: 7px 10px;
+  left: 10px;
+  top: 60%;
+}
+
+.courses__time span {
+  font-size: 10px;
+  font-family: "Comfortaa", cursive;
+}
+
+.courses__price {
+  padding: 19px 10px;
+  right: 0px;
+  bottom: 2px;
+}
+
+.courses__time,
+.courses__price,
+.courses__title {
+  background: rgb(190, 164, 149);
+  position: absolute;
 }
 
 .footer {
@@ -502,6 +539,21 @@ button {
   .button {
     padding: 10px 26px;
   }
+  .courses__title {
+    padding: 6px;
+    left: -1px;
+    top: 40%;
+  }
+  .courses__time {
+    padding: 5px;
+    left: -1px;
+    top: 55%;
+  }
+  .courses__price {
+    padding: 10px;
+    right: 0px;
+    bottom: 9px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -636,6 +688,9 @@ button {
   }
   .steps__item-img {
     width: 66px;
+  }
+  .steps__item-text {
+    font-size: 6px;
   }
 }
 
